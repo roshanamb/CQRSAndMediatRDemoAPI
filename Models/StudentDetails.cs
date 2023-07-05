@@ -17,8 +17,7 @@ namespace CQRSAndMediatRDemoAPI.Models
         public string Email { get; set; }
         public string Address { get; set; }
 
-        [Range(0, 100, ErrorMessage = "Age should be greater than 0 and less than 150")]
-        [MaxLength(3, ErrorMessage = "Max length of age is 3")]
+        [Range(0, 150, ErrorMessage = "Age should be greater than 0 and less than 150")]
         public int Age { get; set; }
     }
 }
